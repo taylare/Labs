@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tayla Rechichi Hotel</title>
+    <link rel="stylesheet" type="text/css" href="includes/css/font-awesome/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    .navbar-nav .nav-link.active {
+                    border: 1px solid;
+                    border-radius: 30pt;
+                    background-color: black; 
+                    color: #c4ff9c;
+                    font-weight: bold;
+    }
+    .bg-colour {
+        background-color: #c4ff9c; 
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-info bg-colour">
+        <div class="container">
+            <a class="navbar-brand" href="lab01.html">Tayla Rechichi Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab01.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab01.html">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab02.html">Lab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="lab03.html">Lab 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab04.html">Lab 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab05.html">Lab 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab06.html">Lab 6</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="lab07.html">Lab 7</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row g-4 justify-content-center">
+            <!-- Lab 3, Exercise 1 -->
+            <div class="col">
+                <div class="card text-center mx-auto d-flex" style="max-width: 18rem; border-color: black;">
+                    <div class="card-header" style="background-color: #bf90f9;">
+                        Part 1, Exercise 1
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <h3>Find spaces in a name</h3>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" id="nameAddon">
+                                    <i class="fa-brands fa-space-awesome" style="color: #bf90f9; height: 1.5rem;"></i>
+                                </label>
+                                <input id="spaceInput" type="text" class="form-control" placeholder="Enter a name">
+                            </div>
+                            <p id="spaceResult"></p>
+                            <button id="countSpacesBtn" class="btn btn-primary">Count Spaces</button>
+                        </div>
+    
+                        <div class="container mt-3">
+                            <h3>Find letters in a name</h3>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text">
+                                    <i class="fa-solid fa-signature" style="color: #aab8ff; height: 1.5rem;"></i>
+                                </label>
+                                <input id="letterInput" type="text" class="form-control" placeholder="Enter a name">
+                            </div>
+                        </div>
+    
+                        <div class="container mt-3">
+                            <div class="input-group mb-3">
+                                <label class="input-group-text">
+                                    <i class="fa-solid fa-arrow-up-a-z" style="color: #aab8ff; height: 1.5rem;"></i>
+                                </label>
+                                <input id="charInput" type="text" class="form-control" placeholder="Enter a letter">
+                            </div>
+                            <button id="countLettersBtn" class="btn btn-primary">Count Letters</button>
+                            <p id="letterResult"></p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted" style="background-color: #aab8ff;">
+                        End Of Exercise 1
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lab 3, Exercise 2 -->
+            <div class="col">
+                <div class="card text-center mx-auto d-flex" style="max-width: 18rem; border-color: black;">
+                    <div class="card-header" style="background-color: #ff5cfa;">
+                        Part 1, Exercise 2
+                    </div>
+                    <div class="card-body">
+                        <h4>Working with time</h4>
+                        <!-- Date input section -->
+                        <div class="input-group mb-3">
+                            <label for="birthdayInput" class="input-group-text">
+                                <i class="fa-solid fa-calendar-days" style="color: #ff5cfa;"></i>
+                            </label>
+                            <input id="birthdayInput" type="date" class="form-control">
+                        </div>
+    
+                        <!-- Display results section -->
+                        <div>
+                            <p>Display your birthday here: <span class="bdayResult"></span></p>
+                            <p>How many days in the month: <span class="daysResult"></span></p>
+                            <p>How many work days: <span class="workDaysResult"></span></p>
+                            <p>BC Minimum wage: $<span class="minWageResult"></span></p>
+                            <p>Salary for the month: $<span class="salaryResult"></span></p>
+                        </div>
+    
+                        <!-- Button to calculate wage -->
+                        <button id="calculateWageBtn" class="btn btn-primary">Calculate Wage</button>
+                    </div>
+                    <div class="card-footer text-muted" style="background-color: #ff5cfa;">
+                        End Of Exercise 2
+                    </div>
+                </div>
+            </div>
+
+            <!--Lab 3, Part 2-->
+            <div class="col">
+                <div class="card text-center mx-auto d-flex" style="max-width: 18rem; border-color: black;">
+                    <div class="card-header" style="background-color: #98dd73;">
+                        Part 2, Exercise 2
+                    </div>
+                    <div class="card-body">
+                        <h4>Error Handling - Number Larger than 2</h4>
+                        <!-- Number input section -->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">
+                                <i class="fa-solid fa-arrow-up-1-9" style="color: #98dd73;"></i>
+                            </label>
+                            <input id="numberInput" type="number" class="form-control">
+                        </div>
+                        <p id="errorResult"></p>
+    
+                        <!-- Button to calculate error-->
+                        <button id="checkNumberBtn" class="btn btn-primary">Calculate</button>
+                    </div>
+                    <div class="card-footer text-muted" style="background-color: #98dd73;">
+                        End Of Exercise 2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="includes/js/lab03.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <footer class="bg-colour text-center">
+    &copy; 2024 Tayla Rechichi Hotel
+    </footer>
+</body>
+</html>
